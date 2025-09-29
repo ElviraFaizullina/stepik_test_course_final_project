@@ -21,7 +21,7 @@ class LoginPage(BasePage):
     def should_be_register_form(self):
         """checking the registration form display"""
         registration_form = self.is_element_present(*LoginPageLocators.REGISTER_FORM)
-        assert registration_form, 'форма регистрации отсутствует на странице'
+        assert registration_form, 'the registration form is missing on the page'
 
     def register_new_user(self, email, password):
         """user registration
